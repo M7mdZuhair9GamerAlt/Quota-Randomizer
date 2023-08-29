@@ -1,0 +1,12 @@
+{
+  "always_run_in_app" : false,
+  "icon" : {
+    "color" : "red",
+    "glyph" : "quote-left"
+  },
+  "name" : "QuotApp",
+  "script" : "const quotes = [\n  \"The only way to do great work is to love what you do. - Steve Jobs\",\n  \"Innovation distinguishes between a leader and a follower. - Steve Jobs\",\n  \"Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill\",\n  \"Believe you can and you're halfway there. - Theodore Roosevelt\",\n  \"The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt\",\n  \"\\\"Never gonna give you up, never gonna let you down, never gonna run around and desert you!\\\" - Rick Astley\", \/\/ Custom quote\n];\n\nfunction getRandomQuote() {\n    const randomIndex = Math.floor(Math.random() * quotes.length);\n    return quotes[randomIndex];\n}\n\nconsole.log(getRandomQuote());",
+  "share_sheet_inputs" : [
+
+  ]
+}
